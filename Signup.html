@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Form</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh; /* Full viewport height */
+            display: flex; /* Enable Flexbox */
+            justify-content: center; /* Center horizontally */
+            align-items: center; /* Center vertically */
+            color: white;
+            background-color: black;
+        }
+        .box {
+            border: #efbc02 4px solid;
+            width: 520px;
+            padding: 20px;
+        }
+        button {
+            background-color: #efbc02;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">   
+        <h1 style="text-align: center;">Sign Up</h1>
+
+        <label>First Name</label>
+        <span style="color: red; margin-right: 180px;">*</span>
+        <label>Last Name<span style="color: red;">*</span></label>
+        <br>
+        <input type="text" size="28">
+        <span style="margin-right: 30px;"></span>
+        <input type="text" size="28">
+        <br><br>
+
+        <label>Username<span style="color: red; margin-right: 187px;">*</span></label>
+        <label>Password<span style="color: red; margin-right: 165px;">*</span></label>
+        <br>
+        <input type="text" size="28">
+        <span style="margin-right: 30px;"></span>
+        <input type="text" size="28">
+        <br><br>
+
+        <label>Address<span style="color: red; margin-right: 205px;">*</span></label>
+        <label>Zip Code</label>
+        <br>
+        <input type="text" size="28">
+        <span style="margin-right: 30px;"></span>
+        <input type="text" size="28">
+        <br><br>
+
+        <label>Phone</label>
+        <span style="margin-right: 220px;"></span>
+        <label>Email Address</label>
+        <br>
+        <input type="number" size="28" placeholder="() _-">
+        <span style="margin-right: 80px;"></span>
+        <input type="email" size="28">
+        <br><br>
+
+        <label>City<span style="color: red; margin-right: 210px;">*</span></label>
+        <br>
+        <select name="City">
+            <option value="1">Lahore</option>
+            <option value="2">Islamabad</option>
+            <option value="3">Karachi</option>
+            <option value="4">Faisalabad</option>
+            <option value="5">Multan</option>
+        </select>
+        <br><br>
+
+        <h3>Thank you for choosing us.</h3>
+        <button>Submit</button>
+    </div>
+</body>
+</html>

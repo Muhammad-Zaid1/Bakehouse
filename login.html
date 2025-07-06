@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <style>
+    
+
+/* General Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Centering the login box */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+  color: white;
+}
+
+/* Styling the login box */
+.login-box {
+  background-color: black;
+  color: white;
+  border: 2px solid gold;
+  padding: 30px;
+  width: 350px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
+}
+
+/* Header styling */
+.login-header h1 {
+  color: gold;
+  margin-bottom: 10px;
+}
+
+.login-header p {
+  margin-bottom: 20px;
+}
+
+/* Form styling */
+.login-form label {
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid gold;
+  border-radius: 4px;
+  background-color: black;
+  color: white;
+}
+
+.login-form input::placeholder {
+  color: #ccc;
+}
+
+/* Login options */
+.login-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.login-options .forgot-password {
+  color: gold;
+  text-decoration: none;
+}
+
+/* Footer styling */
+.login-footer p {
+  margin: 10px 0;
+}
+
+.signup-link {
+  color: gold;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signup-link:hover {
+  text-decoration: underline;
+}
+
+/* Button styling */
+.login-btn {
+  background-color: gold;
+  color: black;
+  border: none;
+  padding: 10px 15px;
+  width: 100%;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background-color: #d4af37;
+}
+
+
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-box">
+      <div class="login-header">
+        <h1>Login</h1>
+        <p>Enter login details to get access</p>
+      </div>
+      <form class="login-form">
+        <label>Username or Email Address</label>
+        <input type="email" placeholder="Username/Email address">
+        <label>Password</label>
+        <input type="password" placeholder="Enter Password">
+        <div class="login-options">
+          <div>
+            <label>Keep Me Logged In</label><input type="checkbox">
+          </div>
+          <a href="#" class="forgot-password">Forgot Password?</a>
+        </div>
+      </form>
+      <div class="login-footer">
+        <p>Don't have an account? <a href="Signup.html" class="signup-link">Sign Up</a> here</p>
+        <button type="submit" class="login-btn">Login</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
